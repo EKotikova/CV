@@ -1,0 +1,85 @@
+$primary-color:#2f80ed;
+$secondary-color:#333333;
+
+html{
+   font-family: Roboto, sans-serif ; 
+}
+*{
+    color:$secondary-color;
+}
+
+h1{
+    color:$primary-color;
+    margin-bottom: 0.25em;
+}
+h2{
+    color: $secondary-color;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+h3{
+    color: $primary-color;
+}
+a{
+    color: $primary-color;
+}
+.contacts{
+    margin-bottom: 2em;
+}
+section{
+    margin-bottom: 3em;
+}
+.cv{
+ max-width: 900px;  
+ margin: 0 auto;
+}
+.contact{
+    display:flex;
+    &_type{
+        min-width: 90px;
+    }
+}
+.phone_number{
+    color:$primary-color;
+}
+.address{
+    color:$primary-color;
+}
+.testing_artifacts{
+    list-style-type: square;
+}
+.testing_tools{
+    list-style-type: square;
+}
+.programming_languages{
+    list-style-type: square;
+}
+.experience{
+    display: flex;
+    margin-bottom: 2em;
+    &_date{
+        min-width: 185px;
+        margin-bottom: 1em;
+    }
+    &_name{
+        font-weight: bold;
+    }
+}
+img{
+   display: block;
+   max-width: 130px;
+   max-height: 200px;
+   margin-bottom: 1em;
+}
+table, th, td {
+    border:1px solid black;
+    text-align: center;
+  }
+
+@media(max-width:575px){
+    .experience{
+        display: block;
+    }
+
+}
